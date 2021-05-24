@@ -35,7 +35,7 @@
     min-height: 100px;
     box-shadow: -3px 2px 21px 4px rgba(32, 30, 41, 1);
 }
-@media (min-width: 1600px){
+@media (min-width: 1212px){
     .profileSidebar{
         position: fixed;
     }
@@ -484,8 +484,8 @@
     padding-top: 8px;
 }
 .testiImg{
-    width: 152px;
-    height: 152px;
+    width: 100px;
+    height: auto;
     position: absolute;
     left: 0;
     top: 0;
