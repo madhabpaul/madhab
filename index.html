@@ -59,11 +59,10 @@
     ga('create', 'UA-92973565-1', 'auto');
     ga('send', 'pageview');
   </script>
+  
 <style>
   model-viewer{
-    height: 400px;
-    width: 400px;
-    margin: 10px;
+    width: 200px;
   }
 </style>
 </head>
@@ -225,9 +224,10 @@
                         graduate in Computer Science.
                       </p>
                     </div>
-                    <model-viewer src="../head.glb" alt="A 3D model of an astronaut" auto-rotate camera-controls ></model-viewer>
 
                     <div class="abContent mt23">
+                      <!-- <model-viewer id="orbit-demo" interpolation-decay="200" src="images/full.glb" poster="images/3davatar.png" alt="A 3D model of me"  ></model-viewer> -->
+
                       <img class="signImg" src="images/sign.png" alt="" width="200px" height="auto" />
                     </div>
                   </div>
@@ -263,20 +263,13 @@
                         <h5>Assamese</h5>
                         <i>Read Write Speak</i>
                       </div>
-                      <!-- <div class="ldInner profLevel7">
-                          <h5>Hindi</h5>
-                          <span></span><span></span><span></span><span></span
-                          ><span></span> <span></span><span></span><span></span
-                          ><span></span><span></span>
-                          <i>7/10</i>
-                        </div> -->
                     </div>
                   </div>
                 </div>
                 
                
               
-                <div class="row mt60">
+                <!-- <div class="row mt60">
                   <div class="col-lg-12">
                     <h2 class="sectionTitle">Interesting Facts</h2>
                   </div>
@@ -306,7 +299,7 @@
                       <h5>Happy Customers</h5>
                     </div>
                   </div>
-                </div>
+                </div> -->
               </div>
             </section>
           </div>
@@ -1039,7 +1032,22 @@
   <script src="js/jquery.easytabs.min.js"></script>
   <script src="js/theme.js"></script>
   
-
+  <script>
+    (() => {
+      const modelViewer = document.querySelector('#orbit-demo');
+      const orbitCycle = [
+        '45deg 55deg 1m',
+        '-60deg 110deg 2m',
+        modelViewer.cameraOrbit
+      ];
+    
+      setInterval(() => {
+        const currentOrbitIndex = orbitCycle.indexOf(modelViewer.cameraOrbit);
+        modelViewer.cameraOrbit =
+            orbitCycle[(currentOrbitIndex + 1) % orbitCycle.length];
+      }, 3000);
+    })();
+    </script>
   <!-- End Include All JS -->
 </body>
 
