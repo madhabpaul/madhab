@@ -2028,3 +2028,181 @@ body.SideBarOpend{
 #backtotop:hover{
     background: #7635f5;
 }
+
+/* clock */
+
+.clock {
+    width: 7rem;
+    height: 7rem;
+    border: 2px solid #01d85f;
+    border-radius: 50%;
+    margin-left: auto;
+    align-items: center;
+    position: relative;
+    padding: 2px;
+    background: #7635f5;
+  }
+  
+  .outer-clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background: #201e29;
+    overflow: hidden;
+  }
+  
+  .outer-clock-face::after {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg)
+  }
+  
+  .outer-clock-face::before,
+  .outer-clock-face::after,
+  .outer-clock-face .marking{
+    content: '';
+    position: absolute;
+    width:3px;
+    height: 100%;
+    background: #7635f5;
+    z-index: 0;
+    left: 49%;
+  }
+  
+  .outer-clock-face .marking {
+    background: #10d85f;
+    width: 2px;
+  }
+  
+  .outer-clock-face .marking.marking-one {
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    transform: rotate(30deg)
+  }
+  
+  .outer-clock-face .marking.marking-two {
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    transform: rotate(60deg)
+  }
+  
+  .outer-clock-face .marking.marking-three {
+    -webkit-transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    transform: rotate(120deg)
+  }
+  
+  .outer-clock-face .marking.marking-four {
+    -webkit-transform: rotate(150deg);
+    -moz-transform: rotate(150deg);
+    transform: rotate(150deg)
+  }
+  
+  .inner-clock-face {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    background: #201e29;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    z-index: 1;
+  }
+  
+  .inner-clock-face::before {
+    content: '';
+    position: absolute;
+    top: 56%;
+    left: 56%;
+    width: 7px;
+    height: 7px;
+    border-radius: 18px;
+    margin-left: -9px;
+    margin-top: -6px;
+    background: #7635f5;
+    z-index: 11;
+  }
+  
+  .hand {
+    width: 50%;
+    right: 50%;
+    height: 3px;
+    background: #61afff;
+    position: absolute;
+    top: 50%;
+    border-radius: 6px;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  }
+  
+  .hand.hour-hand {
+    width: 20%;
+    z-index: 3;
+  }
+  
+  .hand.min-hand {
+    height: 3px;
+    z-index: 10;
+    width: 35%;
+  }
+  
+  .hand.second-hand {
+    background: #ff5e5e;
+    width: 40%;
+  }
+
+
+  /* weather */
+
+  div.widget
+{
+  position: relative;
+  
+  border-radius: 9px;
+  padding: 25px;
+}
+
+div.left-panel
+{
+  
+}
+
+div.date
+{
+  font-size: 14px;
+  font-weight: bold;
+  color: #7635f5;
+}
+
+div.city
+{
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 5px;
+  color: #01d85f;
+}
+
+div.temp
+{
+  font-size: 70px;
+  color: #7635f5;
+  font-weight: normal;
+}
+
+div.panel
+{
+  display: inline-block;
+}
+
+div.right-panel
+{
+  float: right;
+  top: 0;
+  padding-left: 20px;
+  padding-top: 5px;
+}

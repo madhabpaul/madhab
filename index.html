@@ -45,8 +45,8 @@
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <!-- Favicon Icon -->
- <!-- Loads model-viewer for modern browsers -->
- <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+  <!-- Loads model-viewer for modern browsers -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
   <!-- Google Analytics -->
   <script>
     (function (i, s, o, g, r, a, m) {
@@ -59,12 +59,12 @@
     ga('create', 'UA-92973565-1', 'auto');
     ga('send', 'pageview');
   </script>
-  
-<style>
-  model-viewer{
-    width: 200px;
-  }
-</style>
+
+  <style>
+    model-viewer {
+      width: 200px;
+    }
+  </style>
 </head>
 
 <body class="dark">
@@ -80,8 +80,8 @@
               <polygon points="0 20, 100 20, 15 120" opacity=".8"></polygon>
             </svg>
             <div class="psContent">
-              <h3>Madhab Paul</h3>
-              <span>FullStack Developer</span>
+              <h2 style="color: #7635f5;">Madhab Paul</h2>
+              <span id='text' style="color: #7635f5; font-size: medium; font-weight: bolder;">FullStack Developer</span>
             </div>
           </div>
           <div class="psPhoto">
@@ -123,7 +123,7 @@
           <div class="psFooter">
             <a href="mailto:paulmadhab@yahoo.com" class="btt_btn only_icon btt_reverse"><span><i
                   class="icon icon-Mail"></i></span></a>
-            <a href="javascript:void(0);" class="btt_btn contact_me"><span><i class="icon icon-Bag"></i> Hire
+            <a href="#contact" class="btt_btn contact_me"><span><i class="icon icon-Bag"></i> Hire
                 Me</span></a>
           </div>
         </div>
@@ -155,8 +155,11 @@
             </ul>
           </nav>
         </header>
+
+
+
         <!-- home -->
-        <div class="bodyContent" id="home">
+        <div class="bodyContent " id="home">
           <div class="pageCointainer">
             <section class="comonSection aboutSection">
               <div class="container-fluid">
@@ -266,9 +269,9 @@
                     </div>
                   </div>
                 </div>
-                
-               
-              
+
+
+
                 <!-- <div class="row mt60">
                   <div class="col-lg-12">
                     <h2 class="sectionTitle">Interesting Facts</h2>
@@ -397,9 +400,9 @@
                         <div id="ea_col_04" class="collapse show" aria-labelledby="ea_04"
                           data-parent="#edication_accordion">
                           <div class="card-body">
-                            
+
                             <img src="images/redhat.png" width="70px" height="auto" />
-                            <img src="images/red.png" width="70%" height="auto" style="padding-left: 25px;"/>
+                            <img src="images/red.png" width="70%" height="auto" style="padding-left: 25px;" />
                           </div>
                         </div>
                       </div>
@@ -414,34 +417,37 @@
                             </a>
                           </h2>
                         </div>
-                        <div id="ea_col_05" class="collapse show" aria-labelledby="ea_05" data-parent="#edication_accordion">
+                        <div id="ea_col_05" class="collapse show" aria-labelledby="ea_05"
+                          data-parent="#edication_accordion">
                           <div class="card-body">
                             <img src="images/nptel.png" width="70px" height="auto" />
-                            <img src="images/database.jpg" width="60%" height="auto" style="padding-left: 25px; padding-bottom: 15px;"/>
+                            <img src="images/database.jpg" width="60%" height="auto"
+                              style="padding-left: 25px; padding-bottom: 15px;" />
+                          </div>
                         </div>
-                      </div>
-                      <div class="card">
-                        <div class="card-header" id="ea_06">
-                          <h2 class="mb-0">
-                            <a class="collapsed" href="#" data-toggle="collapse" data-target="#ea_col_06"
-                              aria-expanded="false" aria-controls="ea_col_06">
-                              <i class="icofont-certificate-alt-1"></i>
-                              <span>Web Development on Internshala</span>
-                            </a>
-                          </h2>
-                        </div>
-                        <div id="ea_col_06" class="collapse" aria-labelledby="ea_06" data-parent="#edication_accordion">
-                          <div class="card-body">
-                            <img src="images/intern.png" width="60px" height="auto" />
-                            <img src="images/web.png" width="60%" height="auto" style="padding-left: 25px;"/>
+                        <div class="card">
+                          <div class="card-header" id="ea_06">
+                            <h2 class="mb-0">
+                              <a class="collapsed" href="#" data-toggle="collapse" data-target="#ea_col_06"
+                                aria-expanded="false" aria-controls="ea_col_06">
+                                <i class="icofont-certificate-alt-1"></i>
+                                <span>Web Development on Internshala</span>
+                              </a>
+                            </h2>
+                          </div>
+                          <div id="ea_col_06" class="collapse" aria-labelledby="ea_06"
+                            data-parent="#edication_accordion">
+                            <div class="card-body">
+                              <img src="images/intern.png" width="60px" height="auto" />
+                              <img src="images/web.png" width="60%" height="auto" style="padding-left: 25px;" />
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
 
-              </div>
+                </div>
             </section>
 
           </div>
@@ -615,6 +621,53 @@
           </div>
         </div>
 
+        <!-- fun section -->
+
+        <div class="bodyContent mt30">
+          <div class="pageCointainer">
+            <section class="comonSection aboutSection">
+              <div class="container-fluid">
+
+                <div class="row ">
+                  <div class="col-lg-12">
+                    <div class="widget">
+
+                      <div class="left-panel panel">
+                        <div class="date">
+                          Monday, 20 Aug 2018
+                        </div>
+                        <div class="city" id="city">
+                          Loading...
+                        </div>
+                        <div class="temp mt23" id="temp">
+                          00&deg;c
+                        </div>
+                      </div>
+                      <div class="right-panel panel">
+                        <div class="clock">
+                          <div class="outer-clock-face">
+                            <div class="marking marking-one"></div>
+                            <div class="marking marking-two"></div>
+                            <div class="marking marking-three"></div>
+                            <div class="marking marking-four"></div>
+                            <div class="inner-clock-face">
+                              <div class="hand hour-hand"></div>
+                              <div class="hand min-hand"></div>
+                              <div class="hand second-hand"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </section>
+          </div>
+        </div>
+
+
         <!-- portfolio -->
 
         <div class="bodyContent mt30" id="portfolio">
@@ -654,7 +707,7 @@
                       </a>
                       <div class="folio_content">
                         <h3 class="folio_title">
-                         <a> Web App</a>
+                          <a> Web App</a>
                         </h3>
                         <p class="folio_cat">
                           Development
@@ -788,7 +841,7 @@
                     <div class="testimonialSlider owl-carousel">
                       <div class="singleTestimonial">
                         <div class="testiImg">
-                          <img src="images/rmblogo.png" alt=""/>
+                          <img src="images/rmblogo.png" alt="" />
                           <span></span>
                         </div>
                         <div class="testicon">
@@ -932,7 +985,7 @@
         </div> -->
 
         <!-- contact -->
-        
+
         <div class="bodyContent mt30" id="contact">
           <div class="pageCointainer">
             <section class="comonSection contactSection">
@@ -1031,23 +1084,109 @@
 
   <script src="js/jquery.easytabs.min.js"></script>
   <script src="js/theme.js"></script>
-  
+
+
   <script>
-    (() => {
-      const modelViewer = document.querySelector('#orbit-demo');
-      const orbitCycle = [
-        '45deg 55deg 1m',
-        '-60deg 110deg 2m',
-        modelViewer.cameraOrbit
-      ];
-    
-      setInterval(() => {
-        const currentOrbitIndex = orbitCycle.indexOf(modelViewer.cameraOrbit);
-        modelViewer.cameraOrbit =
-            orbitCycle[(currentOrbitIndex + 1) % orbitCycle.length];
-      }, 3000);
-    })();
-    </script>
+    // function([string1, string2],target id,[color1,color2])    
+    consoleText(['Full Stack Developer', 'UI/UX Designer', 'Illustrator'], 'text', ['#7635f5', '#7635f5', '#7635f5']);
+
+    function consoleText(words, id, colors) {
+      if (colors === undefined) colors = ['#fff'];
+      var visible = true;
+      var con = document.getElementById('console');
+      var letterCount = 1;
+      var x = 1;
+      var waiting = false;
+      var target = document.getElementById(id)
+      target.setAttribute('style', 'color:' + colors[0])
+      window.setInterval(function () {
+
+        if (letterCount === 0 && waiting === false) {
+          waiting = true;
+          target.innerHTML = words[0].substring(0, letterCount)
+          window.setTimeout(function () {
+            var usedColor = colors.shift();
+            colors.push(usedColor);
+            var usedWord = words.shift();
+            words.push(usedWord);
+            x = 1;
+            target.setAttribute('style', 'color:' + colors[0])
+            letterCount += x;
+            waiting = false;
+          }, 1000)
+        } else if (letterCount === words[0].length + 1 && waiting === false) {
+          waiting = true;
+          window.setTimeout(function () {
+            x = -1;
+            letterCount += x;
+            waiting = false;
+          }, 1000)
+        } else if (waiting === false) {
+          target.innerHTML = words[0].substring(0, letterCount)
+          letterCount += x;
+        }
+      }, 120)
+    }
+  </script>
+
+
+  <!-- clock -->
+  <script>
+    const secondHand = document.querySelector('.second-hand');
+    const minsHand = document.querySelector('.min-hand');
+    const hourHand = document.querySelector('.hour-hand');
+
+    function setDate() {
+      const now = new Date();
+
+      const seconds = now.getSeconds();
+      const secondsDegrees = ((seconds / 60) * 360) + 90;
+      secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
+
+      const mins = now.getMinutes();
+      const minsDegrees = ((mins / 60) * 360) + ((seconds / 60) * 6) + 90;
+      minsHand.style.transform = `rotate(${minsDegrees}deg)`;
+
+      const hour = now.getHours();
+      const hourDegrees = ((hour / 12) * 360) + ((mins / 60) * 30) + 90;
+      hourHand.style.transform = `rotate(${hourDegrees}deg)`;
+    }
+
+    setInterval(setDate, 1000);
+
+    setDate();
+
+  </script>
+
+  <script>
+    const fetchCity = async () => {
+      const urlCity = "https://freegeoip.app/json/";
+      const result = await fetch(urlCity);
+      const cityJson = await result.json();
+      var city = cityJson.city;
+      const url = `https://api.weatherapi.com/v1/current.json?key=3bb1772cd4e94b8cb60145737210801&q=${city}`;
+      const response = await fetch(url);
+      const dataJson = await response.json();
+      console.log(dataJson);
+      var temp = dataJson.current.temp_c;
+      document.getElementById("city").innerHTML = city;
+      document.getElementById("temp").innerHTML = temp + "&deg;c";
+
+    };
+    fetchCity();
+  </script>
+
+  <!-- <script>
+      const fetchnews = async () => {
+      const urlNews = "https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=d9f4c2be32f34daa905dac2a4ab8085d";
+      const newsresult = await fetch(urlNews);
+      const newsJson = await newsresult.json();
+      var news = newsJson;
+      console.log(news);
+
+    };
+    fetchnews();
+  </script> -->
   <!-- End Include All JS -->
 </body>
 
